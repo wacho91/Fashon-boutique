@@ -3,10 +3,12 @@ import Hero from "./component/Hero/Hero"
 import Navbar from "./component/Navbar/Navbar"
 import Products from "./component/Products/Products"
 import TopProducts from "./component/TopProducts/TopProducts";
+import Banner from "./component/Banner/Banner";
+import Subscribe from "./component/Subscribe/Subscribe";
+
 
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Banner from "./component/Banner/Banner";
 
 
 function App() {
@@ -36,6 +38,7 @@ function App() {
       <Products />
       <TopProducts handleOrderPopup={handleOrderPopup}/>
       <Banner />
+      <Subscribe />
     </div>
   )
 }
