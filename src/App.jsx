@@ -39,6 +39,7 @@ function App() {
       <TopProducts handleOrderPopup={handleOrderPopup}/>
       <Banner />
       <Subscribe />
+      <Products />
     </div>
   )
 }
