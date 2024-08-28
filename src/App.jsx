@@ -2,9 +2,11 @@ import { useEffect } from "react";
 import Hero from "./component/Hero/Hero"
 import Navbar from "./component/Navbar/Navbar"
 import Products from "./component/Products/Products"
+import TopProducts from "./component/TopProducts/TopProducts";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+
 
 function App() {
 
@@ -24,6 +26,7 @@ function App() {
       <Navbar />
       <Hero />
       <Products />
+      <TopProducts />
     </div>
   )
 }
