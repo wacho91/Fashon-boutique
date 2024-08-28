@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Hero from "./component/Hero/Hero"
 import Navbar from "./component/Navbar/Navbar"
 import Products from "./component/Products/Products"
@@ -10,6 +10,13 @@ import "aos/dist/aos.css";
 
 function App() {
 
+  const [orderPopup, setOrderPopup] = useState(false)
+
+  const handleOrderPopup = () => {
+    setOrderPopup(!orderPopup)
+  }
+
+
   useEffect(() => {
     AOS.init({
       offset: 100,
@@ -19,14 +26,14 @@ function App() {
     });
     AOS.refresh();
   },[])
- 
+
 
   return (
     <div>
       <Navbar />
       <Hero />
       <Products />
-      <TopProducts />
+      <TopProducts handleOrderPopup={handleOrderPopup}/>
     </div>
   )
 }
