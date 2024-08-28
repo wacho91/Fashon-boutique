@@ -6,6 +6,7 @@ import TopProducts from "./component/TopProducts/TopProducts";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Banner from "./component/Banner/Banner";
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
       <Hero />
       <Products />
       <TopProducts handleOrderPopup={handleOrderPopup}/>
+      <Banner />
     </div>
   )
 }
