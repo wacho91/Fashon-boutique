@@ -10,6 +10,8 @@ import Subscribe from "./component/Subscribe/Subscribe";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Testimonial from "./component/Testimonial/Testimonial";
+import Footer from "./component/Footer/Footer";
+import Popup from "./component/Popup/Popup";
 
 
 function App() {
@@ -33,15 +35,17 @@ function App() {
 
 
   return (
-    <div>
-      <Navbar />
-      <Hero />
+    <div className="bg-white dark:bg-gray-900 dark:text-white duration-200">
+      <Navbar handleOrderPopup={handleOrderPopup}/>
+      <Hero handleOrderPopup={handleOrderPopup}/>
       <Products />
       <TopProducts handleOrderPopup={handleOrderPopup}/>
       <Banner />
       <Subscribe />
       <Products />
       <Testimonial />
+      <Footer />
+      <Popup orderPopup={orderPopup} setOrderPopup={setOrderPopup} />
     </div>
   )
 }
