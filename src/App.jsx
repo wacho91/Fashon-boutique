@@ -9,6 +9,7 @@ import Subscribe from "./component/Subscribe/Subscribe";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Testimonial from "./component/Testimonial/Testimonial";
 
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
       <Banner />
       <Subscribe />
       <Products />
+      <Testimonial />
     </div>
   )
 }

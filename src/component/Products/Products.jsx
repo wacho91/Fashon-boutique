@@ -85,7 +85,7 @@ const Products = () => {
                     }
                 </div>
                 {/*view all button*/}
-                <div className="flex justify-center">
+                <div data-aos="fade-up" className="flex justify-center">
                   <button className="text-center mt-10 cursor-pointer bg-primary text-white py-1 px-4 rounded-md">
                     View All Button
                   </button>
